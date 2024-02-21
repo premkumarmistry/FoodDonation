@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+
+    <TextView
+        android:id="@+id/Heading"
+        style="@style/LabelStyle"
+        android:layout_width="269dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="101dp"
+        android:layout_marginEnd="89dp"
+        android:gravity="center"
+        android:text="Share Free Food Location !  "
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+
+
+    <TextView
+        android:id="@+id/cityLabel"
+        android:layout_marginTop="30dp"
+        style="@style/LabelStyle"
+        android:layout_below="@id/Heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/city_label"/>
+    <EditText
+        android:id="@+id/cityEditText"
+        style="@style/TextInputStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cityLabel"
+        android:layout_marginTop="8dp"
+        android:hint="For now Enter Ankleshwar only "/>
+
+    <TextView
+        android:id="@+id/foodTypeLabel"
+        style="@style/LabelStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cityEditText"
+        android:layout_marginTop="16dp"
+        android:text="@string/food_type_label"/>
+
+    <EditText
+        android:id="@+id/foodTypeEditText"
+        style="@style/TextInputStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foodTypeLabel"
+        android:layout_marginTop="8dp"
+        android:hint="Grocery,Packed Food , Bhandara "/>
+
+    <TextView
+        android:id="@+id/dateLabel"
+        style="@style/LabelStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foodTypeEditText"
+        android:layout_marginTop="16dp"
+        android:text="@string/date_label"/>
+
+    <EditText
+        android:id="@+id/dateEditText"
+        style="@style/TextInputStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateLabel"
+        android:layout_marginTop="8dp"
+        android:hint="@string/date_hint"
+        android:inputType="none"
+        android:focusable="false"
+        android:onClick="showDatePickerDialog"/>
+
+    <TextView
+        android:id="@+id/timeLabel"
+        style="@style/LabelStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateEditText"
+        android:layout_marginTop="16dp"
+        android:text="Timings"/>
+
+    <EditText
+
+        android:id="@+id/timeEditText"
+        style="@style/TextInputStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timeLabel"
+        android:layout_marginTop="8dp"
+        android:hint="Choose Time "
+        android:inputType="none"
+        android:focusable="false"
+        android:onClick="showTimePickerDialog"/>
+
+    <TextView
+        android:id="@+id/placeLabel"
+        style="@style/LabelStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timeEditText"
+        android:layout_marginTop="16dp"
+        android:text="Location"/>
+
+    <EditText
+        android:id="@+id/placeEditText"
+        style="@style/TextInputStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/placeLabel"
+        android:layout_marginTop="8dp"
+        android:hint="Try to Provide Exact Location"/>
+
+    <Button
+        android:id="@+id/postAvailabilityButton"
+        style="@style/ButtonStyle"
+        android:layout_below="@id/placeEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="@string/post_availability_button"/>
+
+</RelativeLayout>

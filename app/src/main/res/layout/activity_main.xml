@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/Heading"
+        style="@style/LabelStyle"
+        android:layout_width="269dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="101dp"
+        android:layout_marginEnd="89dp"
+        android:gravity="center"
+        android:text="Food Store Donation "
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/Heading"
+        android:id="@+id/foodTypeLabel"
+        style="@style/LabelStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food Type"/>
+
+    <Spinner
+        android:id="@+id/foodTypeSpinner"
+        style="@style/SpinnerStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foodTypeLabel"
+        android:hint="Select Food Type"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/quantityLabel"
+        style="@style/LabelStyle"
+        android:layout_below="@id/foodTypeSpinner"
+        android:layout_marginTop="16dp"
+        android:text="Quantity"/>
+
+    <EditText
+        android:id="@+id/quantityEditText"
+        style="@style/TextInputStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quantityLabel"
+        android:layout_marginTop="8dp"
+        android:hint="Enter Quantity"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+
+        android:id="@+id/expiryDateLabel"
+        style="@style/LabelStyle"
+        android:layout_below="@id/quantityEditText"
+        android:layout_marginTop="16dp"
+        android:text="Expiry Date"/>
+
+    <DatePicker
+        android:id="@+id/expiryDatePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/expiryDateLabel"
+        android:layout_marginTop="8dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:spinnersShown="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+
+        android:id="@+id/donorTypeLabel"
+        style="@style/LabelStyle"
+        android:layout_below="@id/expiryDatePicker"
+        android:layout_marginTop="16dp"
+        android:text="Donor Type"/>
+
+    <Spinner
+        android:id="@+id/donorTypeSpinner"
+        style="@style/SpinnerStyle"
+        android:layout_below="@id/donorTypeLabel"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:hint="Select Donor Type"/>
+
+    <Button
+        android:id="@+id/submitButton"
+        style="@style/ButtonStyle"
+        android:layout_below="@id/donorTypeSpinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Submit Donation"/>
+
+
+</RelativeLayout>
